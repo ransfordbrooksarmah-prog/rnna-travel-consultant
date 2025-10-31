@@ -1,0 +1,61 @@
+/* Simple responsive styles for RNNA Travel Consultant */
+:root{
+  --blue:#0b4f8a;
+  --green:#2fa44f;
+  --muted:#6b7280;
+  --max-width:1100px;
+  --radius:12px;
+  --gap:18px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;color:#0b2540;background:#ffffff;line-height:1.5}
+.container{max-width:var(--max-width);margin:0 auto;padding:24px}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px}
+.logo-wrap{width:64px;height:64px;display:flex;align-items:center;justify-content:center}
+.brand-text h1{margin:0;font-size:28px;color:var(--blue);letter-spacing:1px}
+.brand-text .sub{margin:0;font-size:12px;color:var(--muted)}
+
+.top-nav a{margin-left:14px;text-decoration:none;color:var(--blue);font-weight:600}
+
+.hero{padding:40px 0;background:linear-gradient(180deg, rgba(11,79,138,0.05), rgba(47,164,79,0.03))}
+.hero-inner{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.hero-content{flex:1;min-width:280px}
+.hero-media{flex:1;min-width:260px}
+.tagline-1{font-size:28px;margin:0;color:var(--blue)}
+.tagline-2{font-size:22px;margin-top:12px;margin-bottom:12px;color:var(--blue);opacity:0.95}
+.lead{color:var(--muted)}
+
+.cta-row{margin-top:16px;display:flex;gap:10px}
+.btn-primary{background:var(--blue);color:white;padding:12px 18px;border-radius:8px;text-decoration:none;display:inline-block}
+.btn-ghost{background:transparent;color:var(--blue);padding:12px 18px;border-radius:8px;border:2px solid rgba(11,79,138,0.12);text-decoration:none;cursor:pointer}
+
+.beach-illustration{height:220px;border-radius:16px;background-image:linear-gradient(120deg,#74c0e8 0%, #9be7c4 100%);box-shadow:0 6px 18px rgba(11,79,138,0.08) inset;display:block}
+
+.services{padding-top:10px;padding-bottom:30px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:12px}
+.card{background:#fff;border-radius:12px;padding:16px;border:1px solid rgba(11,79,138,0.06);box-shadow:0 6px 18px rgba(11,79,138,0.03)}
+
+.note{color:var(--muted);margin-top:12px}
+
+.about{padding-bottom:30px}
+
+.contact{padding-top:20px;padding-bottom:40px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.contact-details p{margin:6px 0;color:var(--muted)}
+.referral-form label{display:block;margin-top:10px;font-weight:600;color:var(--blue)}
+.referral-form input,.referral-form textarea{width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid #e6eef5}
+.form-actions{display:flex;gap:8px;margin-top:12px}
+.form-msg{margin-top:8px;color:var(--green)}
+
+/* Footer */
+.site-footer{background:#f8fafc;padding:18px 0;color:var(--muted);text-align:center;border-top:1px solid rgba(11,79,138,0.03)}
+
+/* Responsive */
+@media(max-width:800px){
+  .header-inner{flex-direction:column;align-items:flex-start;gap:12px}
+  .contact-grid{grid-template-columns:1fr}
+  .hero-media{order:2;width:100%}
+  .beach-illustration{height:180px}
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 100 100" role="img" aria-label="RNNA logo">
+  <circle cx="50" cy="50" r="48" fill="#ffffff" stroke="#0b4f8a" stroke-width="3"/>
+  <path d="M20 60 C35 45 50 45 80 30" fill="none" stroke="#2fa44f" stroke-width="6" stroke-linecap="round"/>
+  <path d="M45 35 L62 30 L58 39 L72 25" fill="#0b4f8a" />
+</svg>

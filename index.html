@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RNNA Travel Consultant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <!-- Inline SVG logo -->
+        <div class="logo-wrap" aria-hidden="true">
+          <svg id="rnna-logo" width="64" height="64" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RNNA logo">
+            <circle cx="50" cy="50" r="48" fill="#ffffff" stroke="#0b4f8a" stroke-width="3"/>
+            <path d="M20 60 C35 45 50 45 80 30" fill="none" stroke="#2fa44f" stroke-width="6" stroke-linecap="round"/>
+            <path d="M45 35 L62 30 L58 39 L72 25" fill="#0b4f8a" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>RNNA</h1>
+          <p class="sub">Travel Consultant</p>
+        </div>
+      </div>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h2 class="tagline-1">Your Gateway to Africa’s Adventure</h2>
+          <h3 class="tagline-2">Connecting You to Ghana’s Beauty</h3>
+          <p class="lead">Helping travellers from Europe, America and beyond explore Ghana with safe, tailored trips — flights, hotels, tours, transfers and local experiences.</p>
+          <div class="cta-row">
+            <a class="btn-primary" href="#contact">Refer a Client</a>
+            <a class="btn-ghost" href="#services">See Services</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <!-- Decorative scene - replace later with a photo -->
+          <div class="beach-illustration" role="img" aria-label="Ghana beach scene"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="container services">
+      <h3>What I can refer</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Airport pickup & transfers</h4>
+          <p>Reliable airport meet-and-greet, private or shared transfers.</p>
+        </article>
+        <article class="card">
+          <h4>Accommodation</h4>
+          <p>Hand-picked hotels, guesthouses and lodges to suit your clients' budgets.</p>
+        </article>
+        <article class="card">
+          <h4>Local tours & excursions</h4>
+          <p>Cultural routes, beaches, historical sites, and custom experiences.</p>
+        </article>
+        <article class="card">
+          <h4>Group & corporate rates</h4>
+          <p>Competitive pricing for groups, events and repeat referrals.</p>
+        </article>
+      </div>
+      <p class="note">Interested in a per-person quote? Typical starting rates depend on services chosen — I can share your booking requirements with partners to get firm per-person pricing.</p>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About RNNA Travel Consultant</h3>
+      <p>I am a travel consultant focusing on sending travellers from Europe, America and other regions to Ghana. I work with trusted local providers to ensure safe, authentic and memorable trips. I refer clients to local travel companies and coordinate details so your team can focus on delivering a great experience.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact & Referral</h3>
+      <div class="contact-grid">
+        <div class="contact-details">
+          <p><strong>Phone:</strong> <a href="tel:+233234634997">+233 234634997</a></p>
+          <p><strong>Email:</strong> <a href="mailto:ransfordbrooksarmah@gmail.com">ransfordbrooksarmah@gmail.com</a></p>
+          <p><strong>Location:</strong> Ghana</p>
+          <p>If you'd like to partner, please email or call me. For quick referrals, send client travel dates, number of travellers, origin city, and desired services.</p>
+        </div>
+
+        <form id="referralForm" class="referral-form" onsubmit="return submitForm(event)">
+          <label for="company">Company name</label>
+          <input id="company" name="company" type="text" placeholder="Company you're with" required>
+
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" placeholder="Full name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="your@email.com" required>
+
+          <label for="message">Message / Client details</label>
+          <textarea id="message" name="message" rows="4" placeholder="Dates, pax, services requested..." required></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">Send referral</button>
+            <button type="button" class="btn-ghost" onclick="mailtoFallback()">Email me instead</button>
+          </div>
+          <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© RNNA Travel Consultant — <a href="mailto:ransfordbrooksarmah@gmail.com">ransfordbrooksarmah@gmail.com</a> • +233 234634997</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
